@@ -43,19 +43,39 @@ namespace Didatics
             //Console.WriteLine($"Meu nome e {nome}, tenho {idade} anos e minha altura e {altura} metros.");
 
             // Mais um exemplo de variavel, agora do tipo bool.
-            int anoNascimento = 1993; // Variavel do tipo inteiro
-            string nomeCompleto = "Joaquin"; // Variavel do tipo string
-            double salario = 2500.50; // Variavel do tipo double
-            bool estaAprendendo = true; // Variavel do tipo bool
-            Console.WriteLine($"Meu nome completo e {nomeCompleto}, nasci em {anoNascimento}, meu salario e {salario} e estou aprendendo C#? {estaAprendendo}");
+
+            //int anoNascimento = 1993; // Variavel do tipo inteiro
+            //string nomeCompleto = "Joaquin"; // Variavel do tipo string
+            //double salario = 2500.50; // Variavel do tipo double
+            //bool estaAprendendo = true; // Variavel do tipo bool
+            //Console.WriteLine($"Meu nome completo e {nomeCompleto}, nasci em {anoNascimento}, meu salario e {salario} e estou aprendendo C#? {estaAprendendo}");
+            
             // Outras formas de declarar variaveis
-            var idade = 32; // Variavel do tipo inteiro, inferida pelo compilador
-            var altura = 1.77; // Variavel do tipo double, inferida pelo compilador
-            Console.WriteLine($"Minha idade e {idade} anos e minha altura e {altura} metros.");
+            
+            //var idade = 32; // Variavel do tipo inteiro, inferida pelo compilador
+            //var altura = 1.77; // Variavel do tipo double, inferida pelo compilador
+            //Console.WriteLine($"Minha idade e {idade} anos e minha altura e {altura} metros.");
 
             //mesmo que voce declare uma variavel com var, voce ainda precisa especificar o tipo de dado quando for usar a variavel.
             //por exemplo um numero inteiro, voce pode usar a variavel idade, que foi declarada como var, mas o compilador sabe que ela e do tipo inteiro.
 
+            // Agora vamos falar sobre as constantes.
+            // Constantes sao variaveis cujo valor nao pode ser alterado depois de definido.
+
+            //const double PI = 3.14159; // Constante do tipo double
+            //Console.WriteLine($"O valor de PI e {PI}.");
+
+            // Agora para finalizar, vamos colocar uma entrada do usuario.
+            // Vamos pedir para o usuario digitar seu nome e idade, e depois imprimir uma mensagem na tela com essas informacoes.
+
+            string nome = " ";
+            Console.WriteLine("Digite seu nome: ");
+            nome = Console.ReadLine(); // Lendo a entrada do usuario
+            Console.WriteLine("Seu nome e: ");
+            Console.WriteLine(nome); // Imprimindo o nome do usuario
+
+
+            Console.ReadLine(); // Espera o usuario pressionar uma tecla antes de fechar o programa
         }
     }
 }
